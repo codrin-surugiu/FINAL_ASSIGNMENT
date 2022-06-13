@@ -38,7 +38,7 @@ const handleOperator = (nextOperator) => {
   if (operator && calculator.waitingForSecondOperand)
     calculator.operator = nextOperator;
 
-  if (firstOperand == null && !isNaN(inputValue)) {
+  if (firstOperand === null && !isNaN(inputValue)) {
     calculator.firstOperand = inputValue;
   } else if (operator) {
     const result = operate(firstOperand, inputValue, operator);
