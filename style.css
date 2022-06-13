@@ -1,0 +1,54 @@
+:root {
+  background-color: #3ba66c;
+  --bgColor-span: #ebf027;
+  --bgColor-btns: #64256f;
+  --bgColor-mathBtns: #e0c483;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.calculatorContainer {
+  width: max-content;
+  margin: auto;
+}
+
+.displayCalculator {
+  width: 100%;
+  background-color: var(--bgColor-btns);
+  height: 100px;
+  font-size: 48px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttons {
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  flex: 1 25%;
+  height: 5rem;
+  border: 0.5px solid rgb(146, 145, 145);
+  font-weight: 300;
+  font-size: x-large;
+}
+
+#equal {
+  background-color: var(--bgColor-span);
+}
+
+#operators {
+  background-color: var(--bgColor-mathBtns);
+}
+
+#numbers {
+  background-color: var(--bgColor-btns);
+}
